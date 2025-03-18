@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_40ec040eb15c307b003644fdbbef3cb7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_40ec040eb15c307b003644fdbbef3cb7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_40ec040eb15c307b003644fdbbef3cb7 = L.map(
+                "map_40ec040eb15c307b003644fdbbef3cb7",
+                {
+                    center: [16.833233333333336, 81.43433333333334],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c67764de2c22c5b878b22a2bbbebf71e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c67764de2c22c5b878b22a2bbbebf71e.addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+            var marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_ab0260ed1beb0e7a3971803d069c9445 = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_0782737504212a0298bae0aa53ca5465 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4f92ccc37490d912345a889279b66e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85cbf4c49d596ebe6334ae5c458911a2 = $(`<div id="html_85cbf4c49d596ebe6334ae5c458911a2" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Visakhapatnam<br>     <b>Temperature:</b> 22°C<br>     <b>Humidity:</b> 78%<br>     <b>Rainfall:</b> 12 mm<br>     <b>Malaria Cases:</b> 15<br>     <b>Dengue Cases:</b> 8<br>     <b>Chikungunya Cases:</b> 3     </div>`)[0];
+                popup_c4f92ccc37490d912345a889279b66e6.setContent(html_85cbf4c49d596ebe6334ae5c458911a2);
+            
+        
+
+        marker_ab0260ed1beb0e7a3971803d069c9445.bindPopup(popup_c4f92ccc37490d912345a889279b66e6)
+        ;
+
+        
+    
+    
+                marker_ab0260ed1beb0e7a3971803d069c9445.setIcon(icon_0782737504212a0298bae0aa53ca5465);
+            
+    
+            var marker_cab83c22babc71930e3ae6e8ec417f5e = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_ec9114fc1f9fd818a570da0f7f3aac58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d21a87963268af5c08db6bd65de2c0be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e834ec8621839bbeb8ecbb6f194f0562 = $(`<div id="html_e834ec8621839bbeb8ecbb6f194f0562" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Visakhapatnam<br>     <b>Temperature:</b> 24°C<br>     <b>Humidity:</b> 75%<br>     <b>Rainfall:</b> 10 mm<br>     <b>Malaria Cases:</b> 12<br>     <b>Dengue Cases:</b> 6<br>     <b>Chikungunya Cases:</b> 2     </div>`)[0];
+                popup_d21a87963268af5c08db6bd65de2c0be.setContent(html_e834ec8621839bbeb8ecbb6f194f0562);
+            
+        
+
+        marker_cab83c22babc71930e3ae6e8ec417f5e.bindPopup(popup_d21a87963268af5c08db6bd65de2c0be)
+        ;
+
+        
+    
+    
+                marker_cab83c22babc71930e3ae6e8ec417f5e.setIcon(icon_ec9114fc1f9fd818a570da0f7f3aac58);
+            
+    
+            var marker_69b12ec191e112a7293fbad5b88acab2 = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_62dad4c7967b6b0f1e3940327e89f293 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98b893688e128845bc42ad6bb0b7002a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02055b81ae5ae99397105e342fe8d877 = $(`<div id="html_02055b81ae5ae99397105e342fe8d877" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Visakhapatnam<br>     <b>Temperature:</b> 28°C<br>     <b>Humidity:</b> 70%<br>     <b>Rainfall:</b> 8 mm<br>     <b>Malaria Cases:</b> 20<br>     <b>Dengue Cases:</b> 10<br>     <b>Chikungunya Cases:</b> 4     </div>`)[0];
+                popup_98b893688e128845bc42ad6bb0b7002a.setContent(html_02055b81ae5ae99397105e342fe8d877);
+            
+        
+
+        marker_69b12ec191e112a7293fbad5b88acab2.bindPopup(popup_98b893688e128845bc42ad6bb0b7002a)
+        ;
+
+        
+    
+    
+                marker_69b12ec191e112a7293fbad5b88acab2.setIcon(icon_62dad4c7967b6b0f1e3940327e89f293);
+            
+    
+            var marker_897476325d5ce27d66f61253921cec38 = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_e57c67b82d21e40d29f2edcc42041e5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d07dcd91fba739c8f8fe45278a2e0f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20d0101d967c2f4b8bb5721f4adb8022 = $(`<div id="html_20d0101d967c2f4b8bb5721f4adb8022" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Visakhapatnam<br>     <b>Temperature:</b> 32°C<br>     <b>Humidity:</b> 65%<br>     <b>Rainfall:</b> 5 mm<br>     <b>Malaria Cases:</b> 30<br>     <b>Dengue Cases:</b> 15<br>     <b>Chikungunya Cases:</b> 5     </div>`)[0];
+                popup_9d07dcd91fba739c8f8fe45278a2e0f5.setContent(html_20d0101d967c2f4b8bb5721f4adb8022);
+            
+        
+
+        marker_897476325d5ce27d66f61253921cec38.bindPopup(popup_9d07dcd91fba739c8f8fe45278a2e0f5)
+        ;
+
+        
+    
+    
+                marker_897476325d5ce27d66f61253921cec38.setIcon(icon_e57c67b82d21e40d29f2edcc42041e5c);
+            
+    
+            var marker_fe61d57740e2a52098f2eef843524080 = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_bda186282982ac990000b03fc73c047c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92df08c82dbf461935a1ef085e394d10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48f957aac89d3d9ee0b7c2760fa72cc1 = $(`<div id="html_48f957aac89d3d9ee0b7c2760fa72cc1" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Visakhapatnam<br>     <b>Temperature:</b> 35°C<br>     <b>Humidity:</b> 60%<br>     <b>Rainfall:</b> 3 mm<br>     <b>Malaria Cases:</b> 50<br>     <b>Dengue Cases:</b> 25<br>     <b>Chikungunya Cases:</b> 8     </div>`)[0];
+                popup_92df08c82dbf461935a1ef085e394d10.setContent(html_48f957aac89d3d9ee0b7c2760fa72cc1);
+            
+        
+
+        marker_fe61d57740e2a52098f2eef843524080.bindPopup(popup_92df08c82dbf461935a1ef085e394d10)
+        ;
+
+        
+    
+    
+                marker_fe61d57740e2a52098f2eef843524080.setIcon(icon_bda186282982ac990000b03fc73c047c);
+            
+    
+            var marker_b1f13ee295c15842c7bbdeaa6ad05a4a = L.marker(
+                [16.5062, 80.648],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_fdb7791998f8b7b0d89f6825f8819af1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf252a6fe37715248d8373fc976668dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_991f24ee265febe959d7bc0b6d3d7b75 = $(`<div id="html_991f24ee265febe959d7bc0b6d3d7b75" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Vijayawada<br>     <b>Temperature:</b> 21°C<br>     <b>Humidity:</b> 80%<br>     <b>Rainfall:</b> 14 mm<br>     <b>Malaria Cases:</b> 18<br>     <b>Dengue Cases:</b> 10<br>     <b>Chikungunya Cases:</b> 5     </div>`)[0];
+                popup_cf252a6fe37715248d8373fc976668dd.setContent(html_991f24ee265febe959d7bc0b6d3d7b75);
+            
+        
+
+        marker_b1f13ee295c15842c7bbdeaa6ad05a4a.bindPopup(popup_cf252a6fe37715248d8373fc976668dd)
+        ;
+
+        
+    
+    
+                marker_b1f13ee295c15842c7bbdeaa6ad05a4a.setIcon(icon_fdb7791998f8b7b0d89f6825f8819af1);
+            
+    
+            var marker_f65f170dfbe9fc19f30f6f2d6f2d90d5 = L.marker(
+                [16.5062, 80.648],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_16c60586b10eda5a9757840a1c6ccbb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00beddbe9471b6e2e6bc5056d4fa716c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ffac4529b9c328561dc51c2a659808d = $(`<div id="html_1ffac4529b9c328561dc51c2a659808d" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Vijayawada<br>     <b>Temperature:</b> 23°C<br>     <b>Humidity:</b> 77%<br>     <b>Rainfall:</b> 12 mm<br>     <b>Malaria Cases:</b> 16<br>     <b>Dengue Cases:</b> 7<br>     <b>Chikungunya Cases:</b> 3     </div>`)[0];
+                popup_00beddbe9471b6e2e6bc5056d4fa716c.setContent(html_1ffac4529b9c328561dc51c2a659808d);
+            
+        
+
+        marker_f65f170dfbe9fc19f30f6f2d6f2d90d5.bindPopup(popup_00beddbe9471b6e2e6bc5056d4fa716c)
+        ;
+
+        
+    
+    
+                marker_f65f170dfbe9fc19f30f6f2d6f2d90d5.setIcon(icon_16c60586b10eda5a9757840a1c6ccbb9);
+            
+    
+            var marker_a221b21133c1c7d7211eb00e1f349dd5 = L.marker(
+                [16.5062, 80.648],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_39854150406de4ea2f5854d75a6e0eb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7defc3bcc3a56a2fb6ed310995feb41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72d8031fe1b6083f70b358043ae0faa8 = $(`<div id="html_72d8031fe1b6083f70b358043ae0faa8" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Vijayawada<br>     <b>Temperature:</b> 27°C<br>     <b>Humidity:</b> 73%<br>     <b>Rainfall:</b> 9 mm<br>     <b>Malaria Cases:</b> 22<br>     <b>Dengue Cases:</b> 12<br>     <b>Chikungunya Cases:</b> 6     </div>`)[0];
+                popup_a7defc3bcc3a56a2fb6ed310995feb41.setContent(html_72d8031fe1b6083f70b358043ae0faa8);
+            
+        
+
+        marker_a221b21133c1c7d7211eb00e1f349dd5.bindPopup(popup_a7defc3bcc3a56a2fb6ed310995feb41)
+        ;
+
+        
+    
+    
+                marker_a221b21133c1c7d7211eb00e1f349dd5.setIcon(icon_39854150406de4ea2f5854d75a6e0eb2);
+            
+    
+            var marker_23fb2765fb06efcf12ba58a322528e80 = L.marker(
+                [16.5062, 80.648],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_7ae3a3161d756c61e77658f8eb58a5ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05d1b3dca2720666d946df0d18f4d482 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d54ab5bae69337ce6915395388ed2c2c = $(`<div id="html_d54ab5bae69337ce6915395388ed2c2c" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Vijayawada<br>     <b>Temperature:</b> 31°C<br>     <b>Humidity:</b> 67%<br>     <b>Rainfall:</b> 6 mm<br>     <b>Malaria Cases:</b> 35<br>     <b>Dengue Cases:</b> 18<br>     <b>Chikungunya Cases:</b> 7     </div>`)[0];
+                popup_05d1b3dca2720666d946df0d18f4d482.setContent(html_d54ab5bae69337ce6915395388ed2c2c);
+            
+        
+
+        marker_23fb2765fb06efcf12ba58a322528e80.bindPopup(popup_05d1b3dca2720666d946df0d18f4d482)
+        ;
+
+        
+    
+    
+                marker_23fb2765fb06efcf12ba58a322528e80.setIcon(icon_7ae3a3161d756c61e77658f8eb58a5ee);
+            
+    
+            var marker_9b9e848b6cd696b5c09d4697ac12725d = L.marker(
+                [16.5062, 80.648],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_889be5067098cee63d9a4f01170ab6db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_468d8f62ca7dc35366f602441ea61904 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2488f7cf7e68cdafd17cc0be43d811b4 = $(`<div id="html_2488f7cf7e68cdafd17cc0be43d811b4" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Vijayawada<br>     <b>Temperature:</b> 34°C<br>     <b>Humidity:</b> 62%<br>     <b>Rainfall:</b> 4 mm<br>     <b>Malaria Cases:</b> 55<br>     <b>Dengue Cases:</b> 30<br>     <b>Chikungunya Cases:</b> 10     </div>`)[0];
+                popup_468d8f62ca7dc35366f602441ea61904.setContent(html_2488f7cf7e68cdafd17cc0be43d811b4);
+            
+        
+
+        marker_9b9e848b6cd696b5c09d4697ac12725d.bindPopup(popup_468d8f62ca7dc35366f602441ea61904)
+        ;
+
+        
+    
+    
+                marker_9b9e848b6cd696b5c09d4697ac12725d.setIcon(icon_889be5067098cee63d9a4f01170ab6db);
+            
+    
+            var marker_4e0a5cca2f5bef0326dfbf0602587a74 = L.marker(
+                [16.3067, 80.4365],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_ca620cf47478d94f5914801b2017c51a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a1a9af818ece4eb580276390f3cfd09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_569eba4248d094ce2056ca389146a15b = $(`<div id="html_569eba4248d094ce2056ca389146a15b" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Guntur<br>     <b>Temperature:</b> 20°C<br>     <b>Humidity:</b> 82%<br>     <b>Rainfall:</b> 15 mm<br>     <b>Malaria Cases:</b> 20<br>     <b>Dengue Cases:</b> 12<br>     <b>Chikungunya Cases:</b> 6     </div>`)[0];
+                popup_3a1a9af818ece4eb580276390f3cfd09.setContent(html_569eba4248d094ce2056ca389146a15b);
+            
+        
+
+        marker_4e0a5cca2f5bef0326dfbf0602587a74.bindPopup(popup_3a1a9af818ece4eb580276390f3cfd09)
+        ;
+
+        
+    
+    
+                marker_4e0a5cca2f5bef0326dfbf0602587a74.setIcon(icon_ca620cf47478d94f5914801b2017c51a);
+            
+    
+            var marker_5fc8a08aeaee4db5e0596b31c35a6c69 = L.marker(
+                [16.3067, 80.4365],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_6777d18173b871c0861fea8638e292dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70a92bc2a2a4d2e20024bc8649ee57ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cda89ef09c54879b9c2838b72c64adbc = $(`<div id="html_cda89ef09c54879b9c2838b72c64adbc" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Guntur<br>     <b>Temperature:</b> 22°C<br>     <b>Humidity:</b> 79%<br>     <b>Rainfall:</b> 13 mm<br>     <b>Malaria Cases:</b> 18<br>     <b>Dengue Cases:</b> 9<br>     <b>Chikungunya Cases:</b> 4     </div>`)[0];
+                popup_70a92bc2a2a4d2e20024bc8649ee57ce.setContent(html_cda89ef09c54879b9c2838b72c64adbc);
+            
+        
+
+        marker_5fc8a08aeaee4db5e0596b31c35a6c69.bindPopup(popup_70a92bc2a2a4d2e20024bc8649ee57ce)
+        ;
+
+        
+    
+    
+                marker_5fc8a08aeaee4db5e0596b31c35a6c69.setIcon(icon_6777d18173b871c0861fea8638e292dd);
+            
+    
+            var marker_e63b6ba8b7799e74807a41ea9f7b5959 = L.marker(
+                [16.3067, 80.4365],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_06b629579c8f7d1bc5f31437ad940317 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fa0dff50fd384f872e65d2c2b8e50f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_180cd605da879a4043aa25c1b0a8d8f6 = $(`<div id="html_180cd605da879a4043aa25c1b0a8d8f6" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Guntur<br>     <b>Temperature:</b> 26°C<br>     <b>Humidity:</b> 75%<br>     <b>Rainfall:</b> 10 mm<br>     <b>Malaria Cases:</b> 25<br>     <b>Dengue Cases:</b> 14<br>     <b>Chikungunya Cases:</b> 7     </div>`)[0];
+                popup_3fa0dff50fd384f872e65d2c2b8e50f9.setContent(html_180cd605da879a4043aa25c1b0a8d8f6);
+            
+        
+
+        marker_e63b6ba8b7799e74807a41ea9f7b5959.bindPopup(popup_3fa0dff50fd384f872e65d2c2b8e50f9)
+        ;
+
+        
+    
+    
+                marker_e63b6ba8b7799e74807a41ea9f7b5959.setIcon(icon_06b629579c8f7d1bc5f31437ad940317);
+            
+    
+            var marker_cb9b7516dff5691c25bec818b5ae378a = L.marker(
+                [16.3067, 80.4365],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_77a01c06b8f05de79f75ac4fcd99bdd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cba545bc415b545cc17291cec6061e7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e21bfc5cc36ed6cd4d5f139def6bc9f = $(`<div id="html_7e21bfc5cc36ed6cd4d5f139def6bc9f" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Guntur<br>     <b>Temperature:</b> 30°C<br>     <b>Humidity:</b> 69%<br>     <b>Rainfall:</b> 7 mm<br>     <b>Malaria Cases:</b> 40<br>     <b>Dengue Cases:</b> 20<br>     <b>Chikungunya Cases:</b> 9     </div>`)[0];
+                popup_cba545bc415b545cc17291cec6061e7d.setContent(html_7e21bfc5cc36ed6cd4d5f139def6bc9f);
+            
+        
+
+        marker_cb9b7516dff5691c25bec818b5ae378a.bindPopup(popup_cba545bc415b545cc17291cec6061e7d)
+        ;
+
+        
+    
+    
+                marker_cb9b7516dff5691c25bec818b5ae378a.setIcon(icon_77a01c06b8f05de79f75ac4fcd99bdd0);
+            
+    
+            var marker_6b089c4e2669db339ee749f0366c07f5 = L.marker(
+                [16.3067, 80.4365],
+                {
+}
+            ).addTo(marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66);
+        
+    
+            var icon_7708a58d6b829e80619924f634650284 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99e10a48484d6f2f0598e1ed6f7b212c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7be74650d1496f9df286991f75ca88b7 = $(`<div id="html_7be74650d1496f9df286991f75ca88b7" style="width: 100.0%; height: 100.0%;">     <b>District:</b> Guntur<br>     <b>Temperature:</b> 33°C<br>     <b>Humidity:</b> 64%<br>     <b>Rainfall:</b> 5 mm<br>     <b>Malaria Cases:</b> 60<br>     <b>Dengue Cases:</b> 35<br>     <b>Chikungunya Cases:</b> 12     </div>`)[0];
+                popup_99e10a48484d6f2f0598e1ed6f7b212c.setContent(html_7be74650d1496f9df286991f75ca88b7);
+            
+        
+
+        marker_6b089c4e2669db339ee749f0366c07f5.bindPopup(popup_99e10a48484d6f2f0598e1ed6f7b212c)
+        ;
+
+        
+    
+    
+                marker_6b089c4e2669db339ee749f0366c07f5.setIcon(icon_7708a58d6b829e80619924f634650284);
+            
+    
+            marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66.addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+            var circle_marker_4b20200bf755e44a5809595f97f9a053 = L.circleMarker(
+                [17.6868, 83.2185],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_6e4d0aed56ec1a4897137584d9402ce1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08316584009aa782b06af528ccb9ae3a = $(`<div id="html_08316584009aa782b06af528ccb9ae3a" style="width: 100.0%; height: 100.0%;">Visakhapatnam (Highlighted)</div>`)[0];
+                popup_6e4d0aed56ec1a4897137584d9402ce1.setContent(html_08316584009aa782b06af528ccb9ae3a);
+            
+        
+
+        circle_marker_4b20200bf755e44a5809595f97f9a053.bindPopup(popup_6e4d0aed56ec1a4897137584d9402ce1)
+        ;
+
+        
+    
+    
+            var circle_marker_0190a24d53e4b36fe5aa584c3815229e = L.circleMarker(
+                [17.6868, 83.2185],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_190370863d1c13a778f70dfa0d9fce22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8240ff76b0c770045f5d1c2f9e39564b = $(`<div id="html_8240ff76b0c770045f5d1c2f9e39564b" style="width: 100.0%; height: 100.0%;">Visakhapatnam (Highlighted)</div>`)[0];
+                popup_190370863d1c13a778f70dfa0d9fce22.setContent(html_8240ff76b0c770045f5d1c2f9e39564b);
+            
+        
+
+        circle_marker_0190a24d53e4b36fe5aa584c3815229e.bindPopup(popup_190370863d1c13a778f70dfa0d9fce22)
+        ;
+
+        
+    
+    
+            var circle_marker_c7ecf49fc50d1f553c5e7d7aa9ff48cc = L.circleMarker(
+                [17.6868, 83.2185],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_a92c915ec9ab8243c5b4a58a2153a351 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab12925979279d60a29f0aba906afd22 = $(`<div id="html_ab12925979279d60a29f0aba906afd22" style="width: 100.0%; height: 100.0%;">Visakhapatnam (Highlighted)</div>`)[0];
+                popup_a92c915ec9ab8243c5b4a58a2153a351.setContent(html_ab12925979279d60a29f0aba906afd22);
+            
+        
+
+        circle_marker_c7ecf49fc50d1f553c5e7d7aa9ff48cc.bindPopup(popup_a92c915ec9ab8243c5b4a58a2153a351)
+        ;
+
+        
+    
+    
+            var circle_marker_2cefbca8a2e4649e0dd8bfa5d8473119 = L.circleMarker(
+                [17.6868, 83.2185],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_5278714601fba6f0e6b1c921c70fee9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2905bf6b0617ac71ddd0c3b9ddc82fdb = $(`<div id="html_2905bf6b0617ac71ddd0c3b9ddc82fdb" style="width: 100.0%; height: 100.0%;">Visakhapatnam (Highlighted)</div>`)[0];
+                popup_5278714601fba6f0e6b1c921c70fee9e.setContent(html_2905bf6b0617ac71ddd0c3b9ddc82fdb);
+            
+        
+
+        circle_marker_2cefbca8a2e4649e0dd8bfa5d8473119.bindPopup(popup_5278714601fba6f0e6b1c921c70fee9e)
+        ;
+
+        
+    
+    
+            var circle_marker_291790b602bd5e21e06c2f8042241f66 = L.circleMarker(
+                [17.6868, 83.2185],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_2c38ffb039e33fb1cf112239200f4d32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28c4cc3b5054fa4da48bb9f71198ad18 = $(`<div id="html_28c4cc3b5054fa4da48bb9f71198ad18" style="width: 100.0%; height: 100.0%;">Visakhapatnam (Highlighted)</div>`)[0];
+                popup_2c38ffb039e33fb1cf112239200f4d32.setContent(html_28c4cc3b5054fa4da48bb9f71198ad18);
+            
+        
+
+        circle_marker_291790b602bd5e21e06c2f8042241f66.bindPopup(popup_2c38ffb039e33fb1cf112239200f4d32)
+        ;
+
+        
+    
+    
+            var circle_marker_994e2ca977e588c16cb217eb4e9572eb = L.circleMarker(
+                [16.5062, 80.648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_3096ff8bde58207b8f8fdd5833519db0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec8114558bbd9f8a0d07446f654426ee = $(`<div id="html_ec8114558bbd9f8a0d07446f654426ee" style="width: 100.0%; height: 100.0%;">Vijayawada (Highlighted)</div>`)[0];
+                popup_3096ff8bde58207b8f8fdd5833519db0.setContent(html_ec8114558bbd9f8a0d07446f654426ee);
+            
+        
+
+        circle_marker_994e2ca977e588c16cb217eb4e9572eb.bindPopup(popup_3096ff8bde58207b8f8fdd5833519db0)
+        ;
+
+        
+    
+    
+            var circle_marker_09ed9266e14f49bfa0efc7bbc5e22e93 = L.circleMarker(
+                [16.5062, 80.648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_12252c0b03a40ae045e66e0b5d217e17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c11f433d480717e552562b2fabeebbcb = $(`<div id="html_c11f433d480717e552562b2fabeebbcb" style="width: 100.0%; height: 100.0%;">Vijayawada (Highlighted)</div>`)[0];
+                popup_12252c0b03a40ae045e66e0b5d217e17.setContent(html_c11f433d480717e552562b2fabeebbcb);
+            
+        
+
+        circle_marker_09ed9266e14f49bfa0efc7bbc5e22e93.bindPopup(popup_12252c0b03a40ae045e66e0b5d217e17)
+        ;
+
+        
+    
+    
+            var circle_marker_731cb00ca40097622782ab7ebe1ee13e = L.circleMarker(
+                [16.5062, 80.648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_46e9623a8ee0386d04dfcda4973497e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64371638a432be4384962f80356dd29e = $(`<div id="html_64371638a432be4384962f80356dd29e" style="width: 100.0%; height: 100.0%;">Vijayawada (Highlighted)</div>`)[0];
+                popup_46e9623a8ee0386d04dfcda4973497e8.setContent(html_64371638a432be4384962f80356dd29e);
+            
+        
+
+        circle_marker_731cb00ca40097622782ab7ebe1ee13e.bindPopup(popup_46e9623a8ee0386d04dfcda4973497e8)
+        ;
+
+        
+    
+    
+            var circle_marker_7fd38caea1efe731919f8b808e8179b7 = L.circleMarker(
+                [16.5062, 80.648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_2a84d394680dcbc3f07818bdf8b44f8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5e76993ba60db84eb113f0f837081b7 = $(`<div id="html_b5e76993ba60db84eb113f0f837081b7" style="width: 100.0%; height: 100.0%;">Vijayawada (Highlighted)</div>`)[0];
+                popup_2a84d394680dcbc3f07818bdf8b44f8b.setContent(html_b5e76993ba60db84eb113f0f837081b7);
+            
+        
+
+        circle_marker_7fd38caea1efe731919f8b808e8179b7.bindPopup(popup_2a84d394680dcbc3f07818bdf8b44f8b)
+        ;
+
+        
+    
+    
+            var circle_marker_2a2139656a967e52fad1f2f89b2e30fd = L.circleMarker(
+                [16.5062, 80.648],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_bffa4dd0868ff47f4af3853e277e465c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30c20f1b8de4c77cb00d7f13088c3c22 = $(`<div id="html_30c20f1b8de4c77cb00d7f13088c3c22" style="width: 100.0%; height: 100.0%;">Vijayawada (Highlighted)</div>`)[0];
+                popup_bffa4dd0868ff47f4af3853e277e465c.setContent(html_30c20f1b8de4c77cb00d7f13088c3c22);
+            
+        
+
+        circle_marker_2a2139656a967e52fad1f2f89b2e30fd.bindPopup(popup_bffa4dd0868ff47f4af3853e277e465c)
+        ;
+
+        
+    
+    
+            var circle_marker_e46496e9a7b4e6cb7e11a899233d2a29 = L.circleMarker(
+                [16.3067, 80.4365],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_323b557b277b903dff931c01246684ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e77140f052bab4fda2f43ce14ce12a4 = $(`<div id="html_7e77140f052bab4fda2f43ce14ce12a4" style="width: 100.0%; height: 100.0%;">Guntur (Highlighted)</div>`)[0];
+                popup_323b557b277b903dff931c01246684ee.setContent(html_7e77140f052bab4fda2f43ce14ce12a4);
+            
+        
+
+        circle_marker_e46496e9a7b4e6cb7e11a899233d2a29.bindPopup(popup_323b557b277b903dff931c01246684ee)
+        ;
+
+        
+    
+    
+            var circle_marker_d7ec41cbf7270375a54bcc5130752b7d = L.circleMarker(
+                [16.3067, 80.4365],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_1a3a00e1df7808666bf571f9e8c9a014 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02bfcaf50704eab0a265518baf911b9b = $(`<div id="html_02bfcaf50704eab0a265518baf911b9b" style="width: 100.0%; height: 100.0%;">Guntur (Highlighted)</div>`)[0];
+                popup_1a3a00e1df7808666bf571f9e8c9a014.setContent(html_02bfcaf50704eab0a265518baf911b9b);
+            
+        
+
+        circle_marker_d7ec41cbf7270375a54bcc5130752b7d.bindPopup(popup_1a3a00e1df7808666bf571f9e8c9a014)
+        ;
+
+        
+    
+    
+            var circle_marker_4ef000f3b07d602d74ea95336bc4947a = L.circleMarker(
+                [16.3067, 80.4365],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_15463d16658b240e68bec1656602141e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ccaf1e8681c2ffd664f453b6ba87f66 = $(`<div id="html_4ccaf1e8681c2ffd664f453b6ba87f66" style="width: 100.0%; height: 100.0%;">Guntur (Highlighted)</div>`)[0];
+                popup_15463d16658b240e68bec1656602141e.setContent(html_4ccaf1e8681c2ffd664f453b6ba87f66);
+            
+        
+
+        circle_marker_4ef000f3b07d602d74ea95336bc4947a.bindPopup(popup_15463d16658b240e68bec1656602141e)
+        ;
+
+        
+    
+    
+            var circle_marker_134c0e0468c666693eb7df1d8829df72 = L.circleMarker(
+                [16.3067, 80.4365],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_1a5d39bdc1cff045c0a581af3aeccb95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4367ec56d0be50d51f0fd06aeb5fc9eb = $(`<div id="html_4367ec56d0be50d51f0fd06aeb5fc9eb" style="width: 100.0%; height: 100.0%;">Guntur (Highlighted)</div>`)[0];
+                popup_1a5d39bdc1cff045c0a581af3aeccb95.setContent(html_4367ec56d0be50d51f0fd06aeb5fc9eb);
+            
+        
+
+        circle_marker_134c0e0468c666693eb7df1d8829df72.bindPopup(popup_1a5d39bdc1cff045c0a581af3aeccb95)
+        ;
+
+        
+    
+    
+            var circle_marker_7fe54b68c3131c8fc6a9d4a0e1228250 = L.circleMarker(
+                [16.3067, 80.4365],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+        var popup_0da0dc8ae072f26a012cb71dd547a9c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7b9c86e4fb03f4712264f73d114643a = $(`<div id="html_f7b9c86e4fb03f4712264f73d114643a" style="width: 100.0%; height: 100.0%;">Guntur (Highlighted)</div>`)[0];
+                popup_0da0dc8ae072f26a012cb71dd547a9c5.setContent(html_f7b9c86e4fb03f4712264f73d114643a);
+            
+        
+
+        circle_marker_7fe54b68c3131c8fc6a9d4a0e1228250.bindPopup(popup_0da0dc8ae072f26a012cb71dd547a9c5)
+        ;
+
+        
+    
+    
+            var heat_map_edb919c24a69d53dfb00d2c948f82448 = L.heatLayer(
+                [[17.6868, 83.2185, 15], [17.6868, 83.2185, 12], [17.6868, 83.2185, 20], [17.6868, 83.2185, 30], [17.6868, 83.2185, 50], [16.5062, 80.648, 18], [16.5062, 80.648, 16], [16.5062, 80.648, 22], [16.5062, 80.648, 35], [16.5062, 80.648, 55], [16.3067, 80.4365, 20], [16.3067, 80.4365, 18], [16.3067, 80.4365, 25], [16.3067, 80.4365, 40], [16.3067, 80.4365, 60]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 15,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_edb919c24a69d53dfb00d2c948f82448.addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+        
+    
+            var layer_control_db317d9a037d8f58785101f5e3d59b38_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c67764de2c22c5b878b22a2bbbebf71e,
+                },
+                overlays :  {
+                    "macro_element_3d0d78008e39b446d9726bd0dd0e7f66" : marker_cluster_3d0d78008e39b446d9726bd0dd0e7f66,
+                    "Malaria Heatmap" : heat_map_edb919c24a69d53dfb00d2c948f82448,
+                },
+            };
+            let layer_control_db317d9a037d8f58785101f5e3d59b38 = L.control.layers(
+                layer_control_db317d9a037d8f58785101f5e3d59b38_layers.base_layers,
+                layer_control_db317d9a037d8f58785101f5e3d59b38_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_40ec040eb15c307b003644fdbbef3cb7);
+
+        
+</script>
+</html>
